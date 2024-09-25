@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Data Entry</title>
+    <link rel="icon" href="/img/icon.ico" />
+    <link rel="stylesheet" href="student-data.css" />
+  </head>
+  <body>
+    <!-- ru profile -->
+    <div class="main-ru">
+      <img src="/img/RU_logo.png" alt="ru-logo" />
+      <h1>Rayalaseema University College of Engineering</h1>
+    </div>
+    <!-- ru profile end -->
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+    <!--  If necessary, please modify the charset parameter to specify the        -->
+    <!--  character set of your HTML page.                                        -->
+    <!--  ----------------------------------------------------------------------  -->
+
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+
+    <form
+      action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DdM000006o5U5"
+      method="POST"
+    >
+      <input type="hidden" name="oid" value="00DdM000006o5U5" />
+      <input
+        type="hidden"
+        name="retURL"
+        value="http://ru-success.netlify.app/"
+      />
+
+      <!--  ----------------------------------------------------------------------  -->
+      <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+      <!--  these lines if you wish to test in debug mode.                          -->
+      <!--  <input type="hidden" name="debug" value=1>                              -->
+      <!--  <input type="hidden" name="debugEmail" value="smdjubear@gmail.com">     -->
+      <!--  ----------------------------------------------------------------------  -->
+
+      <div class="container">
+        <!-- student details -->
+        <div class="sd">
+          <h3>Student Details</h3>
+
+          <label for="salutation">Salutation</label>
+          <select id="salutation" name="salutation">
+            <option value="">--None--</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Dr.">Dr.</option>
+            <option value="Prof.">Prof.</option>
+            <option value="Mx.">Mx.</option>
+          </select>
+          <br />
+
+          <label for="first_name">First Name</label>
+          <input
+            id="first_name"
+            maxlength="40"
+            name="first_name"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          <label for="last_name">Last Name</label>
+          <input
+            id="last_name"
+            maxlength="80"
+            name="last_name"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          Branch:
+          <input
+            id="00NdM000002v9IL"
+            maxlength="100"
+            name="00NdM000002v9IL"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          Roll No:
+          <input
+            id="00NdM000002v9yH"
+            maxlength="10"
+            name="00NdM000002v9yH"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          Gender:
+          <select id="00NdM000002vA4j" name="00NdM000002vA4j" title="Gender">
+            <option value="">--None--</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+          </select>
+          <br />
+
+          <label for="phone">Phone</label>
+          <input id="phone" maxlength="40" name="phone" size="20" type="text" />
+          <br />
+
+          <label for="email">Email</label>
+          <input id="email" maxlength="80" name="email" size="20" type="text" />
+          <br />
+
+          SSC_Marks:
+          <input
+            id="00NdM000002vA9Z"
+            name="00NdM000002vA9Z"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          Inter/Diploma Marks:
+          <input
+            id="00NdM000002vAEP"
+            name="00NdM000002vAEP"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          Student Joining Date:
+          <span class="dateInput dateOnlyInput">
+            <input
+              id="00NdM000002vAMT"
+              name="00NdM000002vAMT"
+              size="12"
+              type="text"
+            />
+          </span>
+          <br />
+
+          Student Passedout Date:
+          <span class="dateInput dateOnlyInput">
+            <input
+              id="00NdM000002vAPh"
+              name="00NdM000002vAPh"
+              size="12"
+              type="text"
+            />
+          </span>
+          <br />
+
+          <label for="street">Street</label>
+          <textarea name="street"></textarea>
+          <br />
+
+          <label for="city">City</label>
+          <input id="city" maxlength="40" name="city" size="20" type="text" />
+          <br />
+
+          <label for="zip">Zip</label>
+          <input id="zip" maxlength="20" name="zip" size="20" type="text" />
+          <br />
+
+          <label for="state">State/Province</label>
+          <input id="state" maxlength="20" name="state" size="20" type="text" />
+          <br />
+
+          <label for="country">Country</label>
+          <input
+            id="country"
+            maxlength="40"
+            name="country"
+            size="20"
+            type="text"
+          />
+          <br />
+        </div>
+
+        <!-- student details end -->
+
+        <!-- student performance  -->
+        <div class="sp">
+          <h3>Student Performance</h3>
+
+          <label for="url">Website</label>
+          <input id="url" maxlength="80" name="url" size="20" type="text" />
+          <br />
+
+          About Student:
+          <textarea
+            id="00NdM000002v9HG"
+            name="00NdM000002v9HG"
+            rows="3"
+            type="text"
+            wrap="soft"
+          ></textarea>
+          <br />
+
+          Semester 1:
+          <input
+            id="00NdM000002x9BP"
+            name="00NdM000002x9BP"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          Semester 2:
+          <input
+            id="00NdM000002xHRt"
+            name="00NdM000002xHRt"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          Semester 3:
+          <input
+            id="00NdM000002x959"
+            name="00NdM000002x959"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          Semester 4:
+          <input
+            id="00NdM000002xDIF"
+            name="00NdM000002xDIF"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          Semester 5:
+          <input
+            id="00NdM000002xINx"
+            name="00NdM000002xINx"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          Semester 6:
+          <input
+            id="00NdM000002xAQQ"
+            name="00NdM000002xAQQ"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          Semester 7:
+          <input
+            id="00NdM000002woq6"
+            name="00NdM000002woq6"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          Semester 8:
+          <input
+            id="00NdM000002xGag"
+            name="00NdM000002xGag"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          B.Tech Percentage:
+          <input
+            id="00NdM000002xBbO"
+            name="00NdM000002xBbO"
+            size="20"
+            type="text"
+          />
+          <br />
+
+          Backlogs in any semester:
+          <textarea
+            id="00NdM000002xKXpUAM"
+            name="00NdM000002xKXpUAM"
+            rows="25"
+            type="text"
+            wrap="soft"
+          ></textarea>
+          <script>
+            CKEDITOR.timestamp = "4.24.0.2";
+            var protocolAndHost =
+              window.location.protocol + "//" + window.location.host;
+
+            var editor = CKEDITOR.replace("00NdM000002xKXpUAM", {
+              removePlugins:
+                "elementspath,maximize,image,tabletools,liststyle,contextmenu,resize",
+              baseHref: protocolAndHost + "/ckeditor/ckeditor-4.x/rel/",
+              customConfig: "/ckeditor/ckeditor-4.x/rel/sfdc-config.js",
+              height: "425",
+              bodyId: "00NdM000002xKXpUAM_rta_body",
+              toolbar: "SalesforceBasic",
+              sfdcLabels: {
+                CkeLineHeight: {
+                  doubleValue: "Double",
+                  secondValue: "1.15",
+                  singleValue: "Single",
+                  thirdValue: "1.5",
+                  title: "Line Height",
+                },
+                CkeCodeBlock: { addCodeSample: "Add a code sample" },
+                CkeQuickText: { title: "Insert quick text" },
+                CkeMediaEmbed: {
+                  description:
+                    "Use &lt;iframe&gt; code from an approved video source.",
+                  example:
+                    "\n            \n                &lt;iframe width=\&quot;560\&quot; height=\&quot;315\&quot; src=\&quot;https://www.youtube.com/embed/KcOm0TNvKBA\&quot; frameborder=\&quot;0\&quot; allowfullscreen&gt;&lt;/iframe&gt;\n            \n        ",
+                  exampleTitle: "Example:",
+                  iframeMissing:
+                    "Invalid &lt;iframe&gt; element. Please use valid code from the approved sites.",
+                  subtitle: "Paste &amp;lt;iframe&amp;gt; code here:",
+                  title: "Embed Multimedia Content",
+                },
+                CkeImageMenu: {
+                  pasteUrl: "Paste Image URL",
+                  title: "Insert images into your message",
+                  uploadCms: "Salesforce CMS",
+                  uploadFile: " Browse or Upload",
+                  uploadSFFile: "Salesforce Files",
+                  uploadUrl: "Web Image",
+                },
+                CkeImagePaste: {
+                  CkeImagePasteWarning:
+                    "Pasting an image is not working properly with Firefox, please use [Copy Image location] instead.",
+                },
+                CkeImageDialog: {
+                  btn_insert: "Insert",
+                  btn_insert_tooltip: "Insert Image",
+                  btn_upadte: "Update",
+                  btn_update: "Update",
+                  btn_update_tooltip: "Update Image",
+                  defaultImageDescription: "User-added image",
+                  error: "Error:",
+                  httpUrlWarning:
+                    "Are you sure you want to use an http URL? Using http image URLs may result in security warnings about insecure content. To avoid these warnings, use https image URLs instead.",
+                  imageUploadLimit_info: "Max number of upload images exceeded",
+                  infoTab: "Web Address",
+                  infoTab_desc: "Description",
+                  infoTab_desc_info:
+                    "Enter a description of the image for visually impaired users",
+                  infoTab_url: "URL",
+                  infoTab_url_info:
+                    "Example: http://www.mysite.com/myimage.jpg",
+                  invalidUrlError:
+                    "You can only use http:, https:, data:, //, /, or relative URL schemes.",
+                  missingUrlError: "You must enter a URL",
+                  title: "Insert Image",
+                  uploadTab: "Upload Image",
+                  uploadTab_desc: "Description",
+                  uploadTab_desc_info:
+                    "Enter a description of the image for visually impaired users",
+                  uploadTab_file: "Select Image",
+                  uploadTab_file_info:
+                    "Maximum size 1 MB. Only PNG, GIF or JPEG",
+                  wrongFileTypeError:
+                    "You can insert only .gif .jpeg and .png files.",
+                },
+                sfdcSwitchToText: { sfdcSwitchToTextAlt: "Use plain text" },
+                CkeSmartLink: {
+                  SmartLinkContextMenuEdit: "Edit Smart Link",
+                  title: "Insert a Smart Link",
+                },
+              },
+              contentsCss: [
+                "/ckeditor/ckeditor-4.x/rel/contents.css",
+                "/sCSS/61.0/sprites/1719007999000/Theme3/default/gc/CKEditor.css",
+                "/sCSS/61.0/sprites/1719007999000/Theme3/default/gc/HtmlDetailElem.css",
+              ],
+              disableNativeSpellChecker: false,
+              language: "en-US",
+              allowIframe: false,
+              isPardotOrg: false,
+              isCmsOnly: false,
+              sharedSpaces: { top: "cke_topSpace", bottom: " cke_bottomSpace" },
+              filebrowserImageUploadUrl:
+                "/_ui/common/request/servlet/RtaImageUploadServlet?_CONFIRMATIONTOKEN=VmpFPSxNakF5TkMwd09TMHlPRlF3TmpvME9EbzBOUzQ1TmpsYSxrRUxpak5ScXlhLVRqV0o1VGRaZVQ0eHJOWk1reUQ4TElJbzRxRzNSc1k0PSxOR0ZtTXpjMg==",
+            });
+
+            editor.on("instanceReady", function (evt) {
+              try {
+                var id = evt.editor.name;
+                CKiframe = document
+                  .getElementById("cke_" + id)
+                  .querySelector("iframe");
+                meta = document.createElement("meta");
+                meta.setAttribute("name", "referrer");
+                meta.setAttribute("content", "no-referrer");
+                CKiframe.contentDocument.head.appendChild(meta);
+              } catch (e) {}
+            });
+          </script>
+          <br />
+        </div>
+        <!-- student performance end -->
+      </div>
+      <!-- parent details -->
+      <div class="pd">
+        <h3>Parent Details</h3>
+
+        Parent Name:
+        <input
+          id="00NdM000002xBbP"
+          maxlength="40"
+          name="00NdM000002xBbP"
+          size="20"
+          type="text"
+        />
+        <br />
+
+        Parent Phone number:
+        <input
+          id="00NdM000002xIvJ"
+          maxlength="40"
+          name="00NdM000002xIvJ"
+          size="20"
+          type="text"
+        />
+        <br />
+
+        Parent Email I&#39;d:
+        <input
+          id="00NdM000002xGDa"
+          maxlength="80"
+          name="00NdM000002xGDa"
+          size="20"
+          type="text"
+        />
+        <br />
+
+        <input class="submit" type="submit" name="submit" />
+      </div>
+      <!-- parent details end -->
+    </form>
+  </body>
+</html>

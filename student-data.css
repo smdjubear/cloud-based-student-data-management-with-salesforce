@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  background-image: linear-gradient(#f3cec6, #ce7ec5);
+  font-family: "Inter";
+}
+
+.main-ru {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-ru img {
+  width: 100px;
+  height: 150px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+}
+
+.sd,
+.sp {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  column-gap: 3cap;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pd {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+input,
+textarea,
+select {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.submit {
+  border-radius: 10px;
+  background-color: rgb(28, 71, 243);
+  padding: 10px 20px;
+  margin: 20px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
