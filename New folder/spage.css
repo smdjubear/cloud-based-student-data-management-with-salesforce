@@ -40,3 +40,16 @@ body {
   color: black;
   background-color: #f9cea7;
 }
+
+.footer {
+  color: #fff;
+  margin-top: 60px;
+  padding: 5px;
+  border-radius: 50px;
+  img {
+    width: 40px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+}
